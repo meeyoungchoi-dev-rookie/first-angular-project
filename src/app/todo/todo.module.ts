@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AddTodoComponent } from './todos/add-todo/add-todo.component';
 
 @NgModule({
   imports: [
@@ -8,6 +9,9 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     TodosComponent
+  ],
+  declarations: [
+    AddTodoComponent
   ]
 })
 export class TodoModule { }

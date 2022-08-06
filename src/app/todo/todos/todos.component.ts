@@ -23,4 +23,14 @@ export class TodosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addTodo(text: string) {
+    todo.done = !todo.done
+  }
+
+  addTodo(text: string) {
+    this.todos.push({
+    done : false,
+    text : text
+    });
+  }
 }
