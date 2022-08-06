@@ -3,11 +3,11 @@
   <h2>8월 5일</h2>
 </div>
 <div>
-  <div>
-    <input type="checkbox" [checked]="todos[0].done">{{todos [0].text}}
+  <div *ngForm="let todo of todos">
+    <input type="checkbox" [checked]="todo.done">{{todo.text}}
   </div>
   <div>
-    <input type="checkbox" [checked]="todos[1].done">{{todos [1].text}}
+    <input type="checkbox" [checked]="todo.done">{{todo.text}}
   </div>
 </div>
 <div>
