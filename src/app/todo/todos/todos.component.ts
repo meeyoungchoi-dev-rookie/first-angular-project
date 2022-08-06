@@ -13,6 +13,10 @@ export class TodosComponent implements OnInit {
     done: boolean,
     text: string
   }[];
+
+  toDay: Date = new Date();
+
+
   constructor() {
     this.todos = [
       { done: false, text: '운동하기'},
