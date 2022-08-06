@@ -3,7 +3,7 @@
   <h2>8월 5일</h2>
 </div>
 <div>
-  <div *ngForm="let todo of todos" (click) = "toggleTodo(todo)">
+  <div *ngFor="let todo of todos" (click) = "toggleTodo(todo)">
     <app-todo [todo]="todo"></app-todo>
   </div>
 </div>

@@ -6,7 +6,35 @@ import { Component, OnInit } from '@angular/core';
     <input type="text" placeholder="할일 추가" [(ngModel)]="newText">
     <button (click)="addTodo(newText)">Add</button>
   `,
-  styles: [
+  styles: [`
+
+    :host {
+      display: block;
+      padding: 16px;
+      background-color: white;
+    }
+
+    import {
+      display: inline-block;
+      font-size: 18px;
+      border: none;
+    }
+
+    input:focus, button:focus {
+      outline: none;
+    }
+
+    button {
+      width: 24px;
+      height: 24px;
+      border-radius: 24px;
+      color: white;
+      font-size: 16px;
+      line-height: 17px;
+      border: 1px solid dimgray;
+      background-color: darkblue;
+    }
+  `
   ]
 })
 export class AddTodoComponent implements OnInit {
