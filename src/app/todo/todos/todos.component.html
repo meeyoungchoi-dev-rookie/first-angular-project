@@ -11,5 +11,6 @@
   </div>
 </div>
 <div>
-  <input type="text" placeholder="할일 추가">
+  <input type="text" placeholder="할일 추가" [(ngModel)]="newText">
+  <button (click)="addTodo(newText)">Add</button>
 </div>

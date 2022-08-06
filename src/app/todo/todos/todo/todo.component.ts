@@ -17,4 +17,12 @@ export class TodoComponent implements OnInit {
   toggleTodo(todo) {
     todo.done = !todo.done
   }
+
+  addTodo(newText: string) {
+    this.todo.push({
+      done: false,
+      text: newText
+    });
+    this.newText = '';
+  }
 }

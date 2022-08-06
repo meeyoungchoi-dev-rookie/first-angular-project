@@ -1,17 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodosComponent } from './todos/todos.component';
-import { TodoComponent } from './todo.component';
-
-
 
 @NgModule({
-  declarations: [
-    TodosComponent,
-    TodoComponent
-  ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     TodosComponent
